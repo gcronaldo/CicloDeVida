@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:padding="16dp"
+    android:shrinkColumns="*"
+    android:stretchColumns="*">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_span="3"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="Placar Eletronico"
+            android:textAllCaps="true"
+            android:textSize="18dp"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <TextView
+            android:id="@+id/tvPlacarCasa"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="0"
+            android:textSize="50sp"/>
+
+        <TextView
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="X"
+            android:textSize="50sp"/>
+
+        <TextView
+            android:id="@+id/tvPlacarVisitante"
+            android:layout_gravity="center"
+            android:padding="16dp"
+            android:text="0"
+            android:textSize="50sp"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/btCasa"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:onClick="golCasa"
+            android:padding="16dp"
+            android:text="Gol Casa" />
+
+        <Button
+            android:id="@+id/btVisitante"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:onClick="golVisitante"
+            android:padding="16dp"
+            android:text="Gol Visitante" />
+
+    </TableRow>
+
+</TableLayout>
